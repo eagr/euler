@@ -9,7 +9,7 @@ fn gcd(x: u64, y: u64) -> u64 {
         let mut s = cmp::min(x, y);
         let mut r = l % s;
 
-        if r == 0 { l }
+        if r == 0 { s }
         else {
             while r > 0 {
                 let rem = s % r;

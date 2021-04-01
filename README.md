@@ -47,7 +47,7 @@ S'' = (S' - (2 + 1)) / 2 + 2
 >
 > What is the largest prime factor of the number 600851475143?
 
-Knowing that 'Every composite number has a prime factor less than or equal to its square root', let *n* to be the subject of factorization, we can start doing trial division within the range <img src="https://render.githubusercontent.com/render/math?math=[3, \sqrt{n}]">. Let *a* to the first factor we find, then the largest proper factor *b* would be *n / a*. Let *b* to the new *n*, iterate over the process until we fail to find a factor within the range, then *n* would be the largest prime factor.
+Knowing that 'Every composite number has a prime factor less than or equal to its square root', let *n* to be the subject of factorization, we can start doing trial division within the range <img src="https://render.githubusercontent.com/render/math?math=[3,\sqrt{n}]">. Let *a* to the first factor we find, then the largest proper factor *b* would be *n / a*. Let *b* to the new *n*, iterate over the process until we fail to find a factor within the range, then *n* would be the largest prime factor.
 
 ## Problem 4: Largest palindrome product
 > A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
@@ -55,3 +55,10 @@ Knowing that 'Every composite number has a prime factor less than or equal to it
 > Find the largest palindrome made from the product of two 3-digit numbers.
 
 Small problem size, use brute force.
+
+## Problem 5: Smallest multiple
+> 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+>
+> What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+<img src="https://render.githubusercontent.com/render/math?math=lcm(a,b)=\frac{a \cdot b}{gcd(a,b)}">
