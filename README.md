@@ -62,3 +62,18 @@ Small problem size, use brute force.
 > What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 <img src="https://render.githubusercontent.com/render/math?math=lcm(a,b)=\frac{a \cdot b}{gcd(a,b)}">
+
+## Problem 6:
+> The sum of the squares of the first ten natural numbers is,
+>
+> <img src="https://render.githubusercontent.com/render/math?math=1^2 %2B 2^2 %2B ... %2B 10^2 = 385">
+>
+> The square of the sum of the first ten natural numbers is,
+>
+> <img src="https://render.githubusercontent.com/render/math?math=(1 %2B 2 %2B ... %2B 10)^2 = 55^2 = 3025">
+>
+> Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.
+>
+> Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+<img src="https://render.githubusercontent.com/render/math?math=D_n=S_{n}^2-r_{2}(n)=\big(\frac{n(n%2B1)}{2}\big)^2-\frac{n(n%2B1)(2n%2B1)}{6}">
