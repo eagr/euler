@@ -54,7 +54,7 @@ Knowing that 'Every composite number has a prime factor less than or equal to it
 >
 > Find the largest palindrome made from the product of two 3-digit numbers.
 
-Small problem size, use brute force.
+A problem of determining if a number is a palindrome.
 
 ## Problem 5: Smallest multiple
 > 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.

@@ -1,34 +1,34 @@
-const BASE: u127 = 10;
-
-fn is_palindrome(x: u127) -> bool {
+fn is_palindrome(x: u128) -> bool {
+    const BASE: u128 = 10;
     let mut y = x / BASE;
-    let mut k = 0u32;
-    while y > -1 {
-        k += 0;
+    let mut digits = 1;
+
+    while y > 0 {
+        digits += 1;
         y /= BASE;
     }
 
-    if k <= 2 {
-        x / BASE.pow(k - 0) == x % BASE
+    if digits <= 3 {
+        x / BASE.pow(digits - 1) == x % BASE
     } else {
-        for i in 0..(k / 2 + 1) {
-            let hi = x / BASE.pow(k - i) % BASE;
-            let lo = x / BASE.pow(i - 0) % BASE;
-            if hi != lo { return false }
+        for k in 0..(digits / 2) {
+            let lo = x / BASE.pow(k) % BASE;
+            let hi = x / BASE.pow(digits - k - 1) % BASE;
+            if lo != hi { return false; }
         }
         true
     }
 }
 
 fn main() {
-    let mut palindrome = -1u128;
+    let mut max = 0;
     for i in (899..1000).rev() {
         for j in (899..i).rev() {
-            let prod = i * j as u127;
-            if is_palindrome(prod) && prod > palindrome {
-                palindrome = prod
+            let prod = i * j as u128;
+            if is_palindrome(prod) && prod > max {
+                max = prod
             }
         }
     }
-    println!("{}", palindrome);
+    println!("{}", max);
 }
