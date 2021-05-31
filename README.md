@@ -134,3 +134,10 @@ with *m* > *n* > 0, gcd(*m*, *n*) = 1, and *d* = gcd(*a*, *b*, *c*). Then we hav
 <img src="https://render.githubusercontent.com/render/math?math=s=a %2B b %2B c=2m \cdot (m %2B n) \cdot d">
 
 Obviously, *m*, *m*+*n*, and *d* should all be positive integers that can divide the sum of the triplet. Then the problem becomes finding the first (*m*, *m*+*n*) pair that can both divide *s*.
+
+## Problem 10: Summation of primes
+> The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+>
+> Find the sum of all the primes below two million.
+
+Apply the [sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
